@@ -1,0 +1,56 @@
+{
+  "name": "string-fingerprint-cli",
+  "version": "1.0.0",
+  "description": "Creates a string fringerprint",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "bin": {
+    "stringFingerprint": "cli.js"
+  },
+  "dependencies": {
+    "meow": "^3.7.0",
+    "string-fingerprint": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "execa": "^0.4.0",
+    "xo": "^0.16.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominiklessel/string-fingerprint-cli.git"
+  },
+  "keywords": [
+    "string",
+    "fingerprint",
+    "cli",
+    "cli-app",
+    "unicode",
+    "ascii",
+    "text"
+  ],
+  "author": "Dominik Lessel <dominik@mifitto.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominiklessel/string-fingerprint-cli/issues"
+  },
+  "homepage": "https://github.com/dominiklessel/string-fingerprint-cli#readme",
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "babel/arrow-parens": 0
+    }
+  }
+}
